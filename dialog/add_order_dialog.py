@@ -1,4 +1,5 @@
 import sys
+import os
 import datetime
 
 from PyQt6.QtWidgets import QDialog, QApplication
@@ -12,7 +13,8 @@ from PyQt6.QtWidgets import QSizePolicy
 class AddOrderDialog(QDialog):
     def __init__(self, db_manager: DatabaseManager, parent=None):
         super().__init__(parent)
-        loadUi('ui/add_order_dialog.ui', self)
+        ui_path = os.path.join(os.path.dirname(__file__), '..', 'ui', 'add_order_dialog.ui')
+        loadUi(ui_path, self)
 
         self.db = db_manager
 
