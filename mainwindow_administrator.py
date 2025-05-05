@@ -17,6 +17,10 @@ from tabs.tab_services import ServicesTab
 from tabs.tab_servises_in_orders import Services_in_orders_Tab
 from tabs.tab_workplaces import WorkplacesTab
 
+from dialog.add_client_dialog import AddClientDialog
+from dialog.add_car_dialog import AddCarDialog
+from dialog.add_order_dialog import AddOrderDialog
+
 
 class MainWindowAdministrator(QMainWindow):
     def __init__(self, db_manager: DatabaseManager, admin_id: int):
@@ -34,6 +38,19 @@ class MainWindowAdministrator(QMainWindow):
         self.load_tabs()
 
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+
+        self.refresh_btn.clicked.connect(self.load_last_orders_for_30_days)
+        self.add_client.clicked.connect(self.open_add_client_dialog)
+        self.add_cl.clicked.connect(self.open_add_client_dialog)
+
+
+    def open_add_client_dialog(self):
+        dialog = AddClientDialog(self.qt_db, self)
+        dialog.exec()
+
+    def open_add_car_dialog(self):
+        dialog = AddCarDialog(self.qt_db, self)
+        dialog.exec()
 
     def closeEvent(self, event):
         # Закрытие обоих соединений
@@ -94,7 +111,7 @@ class MainWindowAdministrator(QMainWindow):
         date_30_days_ago = self.date_today - datetime.timedelta(days=30)
 
         query_text = f"""
-            SELECT Order_ID, Order_Date, Total_Amount
+            SELECT Order_ID, Service_name, Order_Date, Total_Amount
             FROM Mechanic_Orders_View
             WHERE Mechanic_ID = {self.admin_id}
               AND Order_Date >= '{date_30_days_ago}'

@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SQL_car_service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database_manageer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialog/add_client_dialog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialog/add_order_dialog.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainwindow_administrator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_cars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_clients.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_mechanicks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_parts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_parts_in_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_payment_types.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_servises_in_orders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tabs/tab_workplaces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/welcome_window.py" afterDir="false" />
+    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="Add project files">
+      <change afterPath="$PROJECT_DIR$/dialog/add_car_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainwindow_administrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_administrator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/add_client_dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/add_client_dialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/mainwindow_admin.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/mainwindow_admin.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.1.executor": "Run",
+    "Python.add_car_dialog.executor": "Run",
     "Python.add_client_dialog.executor": "Run",
     "Python.add_order_dialog (1).executor": "Run",
     "Python.add_order_dialog.executor": "Run",
@@ -79,10 +60,37 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/PycharmProject/SQL_car_service"
+    "last_opened_file_path": "C:/PycharmProject/SQL_car_service/dialog"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.add_client_dialog">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PycharmProject\SQL_car_service\dialog" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.mainwindow_administrator (1)">
+    <configuration name="add_car_dialog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SQL_car_service" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dialog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dialog/add_car_dialog.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="add_client_dialog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_car_service" />
       <option name="ENV_FILES" value="" />
@@ -119,28 +127,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dialog/add_order_dialog.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="add_order_dialog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SQL_car_service" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/add_order_dialog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mainwindow_administrator (1)" />
+        <item itemvalue="Python.add_car_dialog" />
         <item itemvalue="Python.add_client_dialog" />
         <item itemvalue="Python.database_manageer" />
-        <item itemvalue="Python.mainwindow_administrator (1)" />
         <item itemvalue="Python.add_order_dialog (1)" />
-        <item itemvalue="Python.add_order_dialog" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +227,19 @@
       <option name="presentableId" value="Default" />
       <updated>1745834178733</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add project files">
+      <option name="closed" value="true" />
+      <created>1746387373115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746387373115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add project files" />
   </component>
 </project>
