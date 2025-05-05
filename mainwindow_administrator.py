@@ -36,7 +36,7 @@ class MainWindowAdministrator(QMainWindow):
 
         self.completion_label_info()
         self.load_last_orders_for_30_days()
-        # self.load_tabs()
+        self.load_tabs()
 
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
 
@@ -48,11 +48,11 @@ class MainWindowAdministrator(QMainWindow):
         self.merge_clients_and_car_btn.clicked.connect(self.open_merge_clients_and_car_dialog)
 
     def open_add_client_dialog(self):
-        dialog = AddClientDialog(self.qt_db, parent=self)
+        dialog = AddClientDialog(self.db_manager, parent=self)
         dialog.exec()
 
     def open_add_car_dialog(self):
-        dialog = AddCarDialog(self.qt_db, phone_number=None, parent=self)
+        dialog = AddCarDialog(self.db_manager, phone_number=None, parent=self)
         dialog.exec()
 
     def open_add_order_dialog(self):

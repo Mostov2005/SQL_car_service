@@ -359,18 +359,3 @@ if __name__ == "__main__":
     else:
         print("Окно закрыто без сохранения")
     sys.exit(0)
-
-    # def get_order_data(self):
-    #     """
-    #     Заглушка: Здесь извлекаются данные из полей формы.
-    #     Вернёт словарь, пригодный для добавления в БД.
-    #     """
-    #     return {
-    #         'client_id': self.client_combo.currentData(),  # пример
-    #         'car_id': self.car_combo.currentData(),
-    #         'workplace_id': self.workplace_combo.currentData(),
-    #         'payment_type_id': self.payment_combo.currentData(),
-    #         'order_date': self.date_edit.date().toString("yyyy-MM-dd"),
-    #         'services': [],  # если есть
-    #         'parts': [],  # если есть
-    #     }
