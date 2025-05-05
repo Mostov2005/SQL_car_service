@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="add_car_dialog.py - Добавил диалог для добавления машины">
-      <change afterPath="$PROJECT_DIR$/ui/add_car_dialog.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/add_mechanic_dialog.ui" afterDir="false" />
+    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="Dialog для добавления заказов">
+      <change afterPath="$PROJECT_DIR$/dialog/merge_clients_and_cars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialog/add_order_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/add_order_dialog.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainwindow_administrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_administrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/tab_mechanicks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/tab_mechanicks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/add_order_dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/add_order_dialog.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/mainwindow_admin.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/mainwindow_admin.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,34 +34,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_car_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_client_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_order_dialog (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_order_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database_manageer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainwindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainwindow_administrator (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_cars.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_clients.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_mechanicks.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_parts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_parts_in_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_payment_types.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.tab_services.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_servises_in_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_workplaces.executor&quot;: &quot;Run&quot;,
-    &quot;Python.welcome_window.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PycharmProject/SQL_car_service/dialog&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.1.executor": "Run",
+    "Python.add_car_dialog.executor": "Run",
+    "Python.add_client_dialog.executor": "Run",
+    "Python.add_order_dialog (1).executor": "Run",
+    "Python.add_order_dialog.executor": "Run",
+    "Python.database_manageer.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mainwindow.executor": "Run",
+    "Python.mainwindow_administrator (1).executor": "Run",
+    "Python.merge_clients_and_cars.executor": "Run",
+    "Python.tab_cars.executor": "Run",
+    "Python.tab_clients.executor": "Run",
+    "Python.tab_mechanicks.executor": "Run",
+    "Python.tab_orders.executor": "Run",
+    "Python.tab_parts.executor": "Run",
+    "Python.tab_parts_in_orders.executor": "Run",
+    "Python.tab_payment_types.executor": "Debug",
+    "Python.tab_services.executor": "Run",
+    "Python.tab_servises_in_orders.executor": "Run",
+    "Python.tab_workplaces.executor": "Run",
+    "Python.welcome_window.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/PycharmProject/SQL_car_service/dialog"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\PycharmProject\SQL_car_service\dialog" />
@@ -87,28 +83,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="add_car_dialog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SQL_car_service" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dialog" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dialog/add_car_dialog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,6 +157,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="merge_clients_and_cars" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SQL_car_service" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dialog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dialog/merge_clients_and_cars.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tab_mechanicks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_car_service" />
       <option name="ENV_FILES" value="" />
@@ -208,10 +204,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.mainwindow_administrator (1)" />
+        <item itemvalue="Python.merge_clients_and_cars" />
         <item itemvalue="Python.tab_mechanicks" />
         <item itemvalue="Python.add_order_dialog (1)" />
         <item itemvalue="Python.1" />
-        <item itemvalue="Python.add_car_dialog" />
       </list>
     </recent_temporary>
   </component>
@@ -247,12 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1746447997867</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dialog для добавления заказов">
+      <option name="closed" value="true" />
+      <created>1746473324938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1746473324938</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add project files" />
     <MESSAGE value="add_car_dialog.py - Добавил диалог для добавления машины" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_car_dialog.py - Добавил диалог для добавления машины" />
+    <MESSAGE value="Dialog для добавления заказов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dialog для добавления заказов" />
   </component>
 </project>
