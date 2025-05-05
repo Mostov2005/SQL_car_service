@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="Dialog для объединения автомобилей и их владельцев">
-      <change afterPath="$PROJECT_DIR$/mainwindow_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/mainwindow_client.ui" afterDir="false" />
+    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="mainwindow_client.py - Главное окно клиента">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialog/add_order_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/add_order_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainwindow_administrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_administrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/add_car_dialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/add_car_dialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/welcome_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
       <recent name="C:\PycharmProject\SQL_car_service\dialog" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mainwindow_administrator (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="add_order_dialog (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_car_service" />
       <option name="ENV_FILES" value="" />
@@ -264,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746474046728</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="mainwindow_client.py - Главное окно клиента">
+      <option name="closed" value="true" />
+      <created>1746476992329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746476992329</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -272,6 +276,7 @@
     <MESSAGE value="add_car_dialog.py - Добавил диалог для добавления машины" />
     <MESSAGE value="Dialog для добавления заказов" />
     <MESSAGE value="Dialog для объединения автомобилей и их владельцев" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dialog для объединения автомобилей и их владельцев" />
+    <MESSAGE value="mainwindow_client.py - Главное окно клиента" />
+    <option name="LAST_COMMIT_MESSAGE" value="mainwindow_client.py - Главное окно клиента" />
   </component>
 </project>

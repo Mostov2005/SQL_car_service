@@ -101,7 +101,7 @@ class MainWindowAdministrator(QMainWindow):
             FROM mechanics
             WHERE mechanic_id = %s
         """
-        result = db_manager.fetch_one(query, (self.admin_id,))
+        result = self.db_manager.fetch_one(query, (self.admin_id,))
 
         info_user = (
             f'Добро пожаловать, {result[1]}\n'

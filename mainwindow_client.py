@@ -53,7 +53,7 @@ class MainWindowClient(QMainWindow):
             FROM clients
             WHERE client_id = %s
         """
-        result = db_manager.fetch_one(query, (self.client_id,))
+        result = self.db_manager.fetch_one(query, (self.client_id,))
 
         info_user = (
             f'Добро пожаловать, {result[1]}\n'

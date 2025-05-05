@@ -3,6 +3,7 @@ from PyQt6.QtWidgets import QApplication, QMainWindow
 from database_manageer import DatabaseManager
 from welcome_window import WelcomeWindow  # импортируем окно приветствия
 from mainwindow_administrator import MainWindowAdministrator
+from mainwindow_client import MainWindowClient
 
 
 class CarService():
@@ -21,15 +22,18 @@ class CarService():
         # Обработка сигнала, который пришел из WelcomeWindow
         self.welcome_window.close()
 
-        self.mainwindow_admnistator = MainWindowAdministrator(self.db, id)
-        self.mainwindow_admnistator.show()
+        if type_avt == 'Mechanics':
+            self.mainwindow_admnistator = MainWindowAdministrator(self.db, id)
+            self.mainwindow_admnistator.show()
+        else:
+            self.mainwindow_client = MainWindowClient(self.db, id)
+            self.mainwindow_client.show()
 
-        print(type_avt, id)
 
-    def closeEvent(self, event):
-        # Закрытие соединения с базой данных при выходе
-        self.db.disconnect()
-        event.accept()
+def closeEvent(self, event):
+    # Закрытие соединения с базой данных при выходе
+    self.db.disconnect()
+    event.accept()
 
 
 if __name__ == "__main__":

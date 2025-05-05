@@ -23,8 +23,6 @@ class WelcomeWindow(QMainWindow):
         self.number_edit.setInputMask("+7 (999) 999-99-99")
         self.number_edit.mousePressEvent = self._ignore_mouse_event
 
-        # Убрать
-        self.number_edit.setText("+7 (940) 984-69-39")
 
     def authorization(self):
         checked_button = self.ChouseGroup.checkedButton()
