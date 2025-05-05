@@ -1,4 +1,4 @@
-a = ''
+a = [[], []]
 
 if a:
-    print(4)
+    print('ds')

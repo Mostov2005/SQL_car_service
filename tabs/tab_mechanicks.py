@@ -7,12 +7,14 @@ from PyQt6.QtSql import QSqlTableModel
 
 
 class MechanicksTab(QWidget):
-    def __init__(self, db):
+    def __init__(self, db, admin_id: int):
         super().__init__()
         ui_path = os.path.join(os.path.dirname(__file__), '..', 'ui', 'tab_mechanicks.ui')
         loadUi(ui_path, self)
 
         self.qt_db = db
+
+        self.admin_id = admin_id
 
         self.model = QSqlTableModel(self, self.qt_db)
         self.model.setTable('mechanics')  # Название таблицы в БД
@@ -45,16 +47,10 @@ class MechanicksTab(QWidget):
     def delete_selected_row(self):
         index = self.tableView.currentIndex()
         row = index.row()
+        first_column_index = self.model.index(row, 0)
+        value = self.model.data(first_column_index)
+
+        if int(value) == self.admin_id:
+            self.error_label.setText(f'Нельзя удалить себя!')
+            return
         self.model.removeRow(row)
-
-
-# Тестовый запуск только этой вкладки
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    # db = DatabaseManager()
-    # db.connect()
-    db = create_qt_connection()
-
-    window = MechanicksTab(db)
-    window.show()
-    sys.exit(app.exec())

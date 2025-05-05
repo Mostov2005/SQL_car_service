@@ -40,16 +40,21 @@ class MainWindowAdministrator(QMainWindow):
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
 
         self.refresh_btn.clicked.connect(self.load_last_orders_for_30_days)
-        self.add_client.clicked.connect(self.open_add_client_dialog)
-        self.add_cl.clicked.connect(self.open_add_client_dialog)
 
+        self.place_order_btn.clicked.connect(self.open_add_order_dialog)
+        self.add_client_btn.clicked.connect(self.open_add_client_dialog)
+        self.add_car_btn.clicked.connect(self.open_add_car_dialog)
 
     def open_add_client_dialog(self):
-        dialog = AddClientDialog(self.qt_db, self)
+        dialog = AddClientDialog(self.qt_db, parent=self)
         dialog.exec()
 
     def open_add_car_dialog(self):
-        dialog = AddCarDialog(self.qt_db, self)
+        dialog = AddCarDialog(self.qt_db, phone_number=None, parent=self)
+        dialog.exec()
+
+    def open_add_order_dialog(self):
+        dialog = AddOrderDialog(self.db_manager, parent=self)
         dialog.exec()
 
     def closeEvent(self, event):
@@ -67,7 +72,7 @@ class MainWindowAdministrator(QMainWindow):
         self.clints_tab = ClientsTab(self.qt_db)
         self.parts_tab = PartsTab(self.qt_db)
         self.parts_in_orders_tab = PartsInOrdersTab(self.qt_db)
-        self.mechanicks_tab = MechanicksTab(self.qt_db)
+        self.mechanicks_tab = MechanicksTab(self.qt_db, admin_id=self.admin_id)
         self.payment_types_tab = PaymentTypesTab(self.qt_db)
         self.services_tab = ServicesTab(self.qt_db)
         self.services_in_orders_tab = Services_in_orders_Tab(self.qt_db)
