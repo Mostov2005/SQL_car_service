@@ -23,10 +23,13 @@ class MainWindowClient(QMainWindow):
 
         self.completion_label_info()
         self.get_cars()
+        self.get_orders()
 
-        self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self.tableView_cars.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
+        self.tableView_orders.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
 
-        self.refresh_btn.clicked.connect(self.get_cars)
+        self.refresh_cars_btn.clicked.connect(self.get_cars)
+        self.refresh_orders_btn.clicked.connect(self.get_orders)
         self.place_order_btn.clicked.connect(self.open_add_order_dialog)
         self.add_car_btn.clicked.connect(self.open_add_car_dialog)
 
@@ -79,7 +82,35 @@ class MainWindowClient(QMainWindow):
             return
 
         self.model.setQuery(query)
-        self.tableView.setModel(self.model)
+        self.tableView_cars.setModel(self.model)
+
+    def get_orders(self):
+        self.model = QSqlQueryModel(self)
+
+        query = QSqlQuery(self.qt_db)
+        query.prepare("""
+            SELECT 
+                o.order_date AS "Дата заказа",
+                c.model AS "Модель",
+                c.license_plate AS "Гос. номер",
+                m.phone_number AS "Телефон механика",
+                o.total_amount AS "Итоговая сумма"
+            FROM orders o
+            JOIN cars c ON o.car_id = c.car_id
+            JOIN services_in_orders sio ON o.order_id = sio.order_id
+            JOIN mechanics m ON sio.mechanic_id = m.mechanic_id
+            WHERE o.client_id = ?
+            ORDER BY o.order_date DESC;
+        """)
+
+        query.addBindValue(self.client_id)
+
+        if not query.exec():
+            print("Ошибка запроса:", query.lastError().text())
+            return
+
+        self.model.setQuery(query)
+        self.tableView_orders.setModel(self.model)
 
 
 if __name__ == "__main__":

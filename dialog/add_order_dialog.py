@@ -5,9 +5,8 @@ import random
 
 from PyQt6.QtWidgets import QDialog, QApplication, QComboBox, QSpinBox, QHeaderView
 from PyQt6.uic import loadUi
-from PyQt6.QtCore import pyqtSignal, Qt, QDate
+from PyQt6.QtCore import Qt, QDate
 from database_manageer import *
-from PyQt6.QtSql import QSqlQueryModel, QSqlQuery
 
 
 class AddOrderDialog(QDialog):

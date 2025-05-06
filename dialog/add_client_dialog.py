@@ -1,9 +1,9 @@
 import sys
 import os
-from PyQt6.QtWidgets import QApplication, QDialog, QLineEdit, QPushButton, QLabel
+from PyQt6.QtWidgets import QApplication, QDialog
 from PyQt6.uic import loadUi
 from database_manageer import *
-from PyQt6.QtCore import pyqtSignal, Qt
+from PyQt6.QtCore import Qt
 
 
 class AddClientDialog(QDialog):

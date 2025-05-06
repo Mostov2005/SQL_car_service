@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="mainwindow_client.py - Главное окно клиента">
+    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="Настройка главного окна, для выбора типа входа">
+      <change afterPath="$PROJECT_DIR$/dialog/report_orders.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog/add_car_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/add_car_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog/add_client_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/add_client_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog/add_order_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/add_order_dialog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog/merge_clients_and_cars.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/merge_clients_and_cars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainwindow_administrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_administrator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainwindow_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/tab_clients.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/tab_clients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/tab_mechanicks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/tab_mechanicks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tabs/tab_parts.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/tab_parts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/mainwindow_admin.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/mainwindow_admin.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/mainwindow_client.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/mainwindow_client.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,16 +70,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/PycharmProject/SQL_car_service"
+    "last_opened_file_path": "C:/PycharmProject/SQL_car_service/dialog"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\PycharmProject\SQL_car_service" />
       <recent name="C:\PycharmProject\SQL_car_service\dialog" />
+      <recent name="C:\PycharmProject\SQL_car_service" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.mainwindow_client">
     <configuration name="add_order_dialog (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_car_service" />
       <option name="ENV_FILES" value="" />
@@ -204,8 +214,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mainwindow_administrator (1)" />
         <item itemvalue="Python.mainwindow_client" />
+        <item itemvalue="Python.mainwindow_administrator (1)" />
         <item itemvalue="Python.merge_clients_and_cars" />
         <item itemvalue="Python.tab_mechanicks" />
         <item itemvalue="Python.add_order_dialog (1)" />
@@ -268,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746476992329</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Настройка главного окна, для выбора типа входа">
+      <option name="closed" value="true" />
+      <created>1746477527361</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746477527361</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -277,6 +295,7 @@
     <MESSAGE value="Dialog для добавления заказов" />
     <MESSAGE value="Dialog для объединения автомобилей и их владельцев" />
     <MESSAGE value="mainwindow_client.py - Главное окно клиента" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainwindow_client.py - Главное окно клиента" />
+    <MESSAGE value="Настройка главного окна, для выбора типа входа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Настройка главного окна, для выбора типа входа" />
   </component>
 </project>

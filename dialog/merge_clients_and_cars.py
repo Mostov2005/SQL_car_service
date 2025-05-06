@@ -1,4 +1,3 @@
-import datetime
 from PyQt6.QtWidgets import QDialog, QVBoxLayout, QTableView
 from PyQt6.QtSql import QSqlQueryModel, QSqlQuery
 

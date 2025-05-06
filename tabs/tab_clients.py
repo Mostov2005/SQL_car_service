@@ -2,7 +2,6 @@ import sys
 import os
 from PyQt6.QtWidgets import QWidget, QApplication, QHeaderView
 from PyQt6.uic import loadUi
-from database_manageer import *
 from PyQt6.QtSql import QSqlTableModel
 
 
