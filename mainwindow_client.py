@@ -8,6 +8,7 @@ from PyQt6.QtWidgets import QWidget, QApplication, QHeaderView
 
 from dialog.add_car_dialog import AddCarDialog
 from dialog.add_order_dialog import AddOrderDialog
+from dialog.edit_number_for_client_dialog import EditPhoneNumber
 
 
 class MainWindowClient(QMainWindow):
@@ -32,6 +33,8 @@ class MainWindowClient(QMainWindow):
         self.refresh_orders_btn.clicked.connect(self.get_orders)
         self.place_order_btn.clicked.connect(self.open_add_order_dialog)
         self.add_car_btn.clicked.connect(self.open_add_car_dialog)
+        self.edit_phone_btn.clicked.connect(self.open_edit_phone_dialog)
+        self.refresh_info_btn.clicked.connect(self.completion_label_info)
 
     def open_add_car_dialog(self):
         dialog = AddCarDialog(self.db_manager, phone_number=self.phone, parent=self)
@@ -39,6 +42,10 @@ class MainWindowClient(QMainWindow):
 
     def open_add_order_dialog(self):
         dialog = AddOrderDialog(self.db_manager, phone_client=self.phone, parent=self)
+        dialog.exec()
+
+    def open_edit_phone_dialog(self):
+        dialog = EditPhoneNumber(self.db_manager, client_id=self.client_id, phone_number=self.phone, parent=self)
         dialog.exec()
 
     def closeEvent(self, event):

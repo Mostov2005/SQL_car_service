@@ -37,7 +37,7 @@ class MainWindowAdministrator(QMainWindow):
 
         self.completion_label_info()
         self.load_last_orders_for_30_days()
-        # self.load_tabs()
+        self.load_tabs()
 
         self.tableView.horizontalHeader().setSectionResizeMode(QHeaderView.ResizeMode.Stretch)
 

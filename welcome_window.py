@@ -23,7 +23,6 @@ class WelcomeWindow(QMainWindow):
         self.number_edit.setInputMask("+7 (999) 999-99-99")
         self.number_edit.mousePressEvent = self._ignore_mouse_event
 
-
     def authorization(self):
         checked_button = self.ChouseGroup.checkedButton()
 
@@ -62,7 +61,6 @@ class WelcomeWindow(QMainWindow):
             query = f"SELECT * FROM {type_avt} WHERE {name_phone} = %s"
             result = self.db.fetch_one(query, (phone_number,))
         if result:
-            print(result)
             id = result[0]
             return id
 
