@@ -22,6 +22,7 @@ from dialog.add_car_dialog import AddCarDialog
 from dialog.add_order_dialog import AddOrderDialog
 from dialog.merge_clients_and_cars import MergeClientsAndCarsDialog
 from dialog.report_orders import ReportOrdersDialog
+from dialog.report_part import ReportPartsSoldDialog
 
 
 class MainWindowAdministrator(QMainWindow):
@@ -48,6 +49,7 @@ class MainWindowAdministrator(QMainWindow):
         self.add_car_btn.clicked.connect(self.open_add_car_dialog)
         self.merge_clients_and_car_btn.clicked.connect(self.open_merge_clients_and_car_dialog)
         self.report_btn.clicked.connect(self.open_report_orders_dialog)
+        self.report_part_btn.clicked.connect(self.open_report_part_dialog)
 
     def open_add_client_dialog(self):
         dialog = AddClientDialog(self.db_manager, parent=self)
@@ -69,6 +71,10 @@ class MainWindowAdministrator(QMainWindow):
         dialog = ReportOrdersDialog(self.qt_db)
         dialog.exec()
 
+    def open_report_part_dialog(self):
+        dialog = ReportPartsSoldDialog(self.db_manager, qt_db=self.qt_db)
+        dialog.exec()
+
     def closeEvent(self, event):
         # Закрытие обоих соединений
         self.db_manager.disconnect()
@@ -79,10 +85,10 @@ class MainWindowAdministrator(QMainWindow):
         event.accept()
 
     def load_tabs(self):
-        self.orders_tab = OrdersTab(self.qt_db)
+        self.orders_tab = OrdersTab(dbmanager=self.db_manager, qt_db=self.qt_db)
         self.cars_tab = CarsTab(self.qt_db)
         self.clints_tab = ClientsTab(self.qt_db)
-        self.parts_tab = PartsTab(self.qt_db)
+        self.parts_tab = PartsTab(dbmanager=self.db_manager, qt_db=self.qt_db)
         self.parts_in_orders_tab = PartsInOrdersTab(self.qt_db)
         self.mechanicks_tab = MechanicksTab(self.qt_db, admin_id=self.admin_id)
         self.payment_types_tab = PaymentTypesTab(self.qt_db)
