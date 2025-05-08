@@ -23,6 +23,7 @@ from dialog.add_order_dialog import AddOrderDialog
 from dialog.merge_clients_and_cars import MergeClientsAndCarsDialog
 from dialog.report_orders import ReportOrdersDialog
 from dialog.report_part import ReportPartsSoldDialog
+from dialog.report_services import ReportPopularServicesDialog
 
 
 class MainWindowAdministrator(QMainWindow):
@@ -50,6 +51,7 @@ class MainWindowAdministrator(QMainWindow):
         self.merge_clients_and_car_btn.clicked.connect(self.open_merge_clients_and_car_dialog)
         self.report_btn.clicked.connect(self.open_report_orders_dialog)
         self.report_part_btn.clicked.connect(self.open_report_part_dialog)
+        self.report_service_btn.clicked.connect(self.open_report_services_dialog)
 
     def open_add_client_dialog(self):
         dialog = AddClientDialog(self.db_manager, parent=self)
@@ -73,6 +75,10 @@ class MainWindowAdministrator(QMainWindow):
 
     def open_report_part_dialog(self):
         dialog = ReportPartsSoldDialog(self.db_manager, qt_db=self.qt_db)
+        dialog.exec()
+
+    def open_report_services_dialog(self):
+        dialog = ReportPopularServicesDialog(qt_db=self.qt_db)
         dialog.exec()
 
     def closeEvent(self, event):

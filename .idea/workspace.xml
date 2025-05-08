@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="Dialog для изменения номера телефона для клиента">
-      <change afterPath="$PROJECT_DIR$/dialog/report_part.py" afterDir="false" />
+    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="tab_orders.py - поиск по имени клиента&#10;tab_parts.py - Поиск по названию детали&#10;mainwindow_administrator.py - дополнительные отчёты(Количество проданных запчастей, их сумма, таблица)">
+      <change afterPath="$PROJECT_DIR$/dialog/report_services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog/report_part.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/report_part.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainwindow_administrator.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainwindow_administrator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/tab_orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/tab_orders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tabs/tab_parts.py" beforeDir="false" afterPath="$PROJECT_DIR$/tabs/tab_parts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/mainwindow_admin.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/mainwindow_admin.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/tab_orders.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/tab_orders.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/tab_parts.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/tab_parts.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,7 @@
       <recent name="C:\PycharmProject\SQL_car_service" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.mainwindow_administrator (1)">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_car_service" />
       <option name="ENV_FILES" value="" />
@@ -299,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746518693124</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tab_orders.py - поиск по имени клиента&#10;tab_parts.py - Поиск по названию детали&#10;mainwindow_administrator.py - дополнительные отчёты(Количество проданных запчастей, их сумма, таблица)">
+      <option name="closed" value="true" />
+      <created>1746612723329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746612723329</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -311,6 +315,7 @@
     <MESSAGE value="Настройка главного окна, для выбора типа входа" />
     <MESSAGE value="Таблица заказов для клиента, окно отчета о доходах за месяц для администраторов" />
     <MESSAGE value="Dialog для изменения номера телефона для клиента" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dialog для изменения номера телефона для клиента" />
+    <MESSAGE value="tab_orders.py - поиск по имени клиента&#10;tab_parts.py - Поиск по названию детали&#10;mainwindow_administrator.py - дополнительные отчёты(Количество проданных запчастей, их сумма, таблица)" />
+    <option name="LAST_COMMIT_MESSAGE" value="tab_orders.py - поиск по имени клиента&#10;tab_parts.py - Поиск по названию детали&#10;mainwindow_administrator.py - дополнительные отчёты(Количество проданных запчастей, их сумма, таблица)" />
   </component>
 </project>

@@ -3,18 +3,17 @@ from PyQt6.QtWidgets import QDialog, QVBoxLayout, QTableView, QLabel, QHeaderVie
 from PyQt6.QtSql import QSqlQueryModel, QSqlQuery
 
 
-class ReportPartsSoldDialog(QDialog):
-    def __init__(self, db_manager, qt_db):
+class ReportPopularServicesDialog(QDialog):
+    def __init__(self, qt_db):
         super().__init__()
-        self.setWindowTitle("Проданные запчасти за последний месяц")
+        self.setWindowTitle("Популярные услуги за последний месяц")
         self.resize(800, 600)
 
-        self.db_manager = db_manager
         self.qt_db = qt_db
 
         # Метки
-        self.label_count = QLabel("Наименований продано: ...", self)
-        self.label_sum = QLabel("Общая выручка: ...", self)
+        self.label_count = QLabel("Оказано разных услуг: ...", self)
+        self.label_sum = QLabel("Общая сумма: ...", self)
 
         # Таблица
         self.model = QSqlQueryModel(self)
@@ -37,15 +36,15 @@ class ReportPartsSoldDialog(QDialog):
 
         query_text = f"""
             SELECT 
-                p.part_name AS "Название запчасти",
-                SUM(pio.quantity) AS "Количество продано",
-                SUM(pio.quantity * p.price) AS "Выручка (₽)"
-            FROM parts_in_orders pio
-            JOIN parts p ON pio.part_id = p.part_id
-            JOIN orders o ON pio.order_id = o.order_id
+                s.service_name AS "Услуга",
+                COUNT(*) AS "Количество оказаний",
+                SUM(s.price) AS "Общая сумма (₽)"
+            FROM services_in_orders sio
+            JOIN services s ON sio.service_id = s.service_id
+            JOIN orders o ON sio.order_id = o.order_id
             WHERE o.order_date >= '{date_30_days_ago}'
-            GROUP BY p.part_name
-            ORDER BY "Количество продано" DESC;
+            GROUP BY s.service_name
+            ORDER BY "Количество оказаний" DESC;
         """
 
         if not query.exec(query_text):
@@ -54,23 +53,23 @@ class ReportPartsSoldDialog(QDialog):
 
         self.model.setQuery(query)
 
-        # Подсчёт общей статистики
+        # Статистика
         summary_query = QSqlQuery(self.qt_db)
         summary_text = f"""
             SELECT 
-                COUNT(DISTINCT pio.part_id) AS part_count,
-                SUM(pio.quantity * p.price) AS total_revenue
-            FROM parts_in_orders pio
-            JOIN parts p ON pio.part_id = p.part_id
-            JOIN orders o ON pio.order_id = o.order_id
+                COUNT(DISTINCT s.service_id) AS service_count,
+                SUM(s.price) AS total_sum
+            FROM services_in_orders sio
+            JOIN services s ON sio.service_id = s.service_id
+            JOIN orders o ON sio.order_id = o.order_id
             WHERE o.order_date >= '{date_30_days_ago}';
         """
 
         if summary_query.exec(summary_text) and summary_query.next():
             count = summary_query.value(0)
             total = summary_query.value(1)
-            self.label_count.setText(f"Наименований продано: {count}")
-            self.label_sum.setText(f"Общая выручка: {total}₽")
+            self.label_count.setText(f"Оказано разных услуг: {count}")
+            self.label_sum.setText(f"Общая сумма: {total}₽")
         else:
-            self.label_count.setText("Наименований продано: ошибка")
-            self.label_sum.setText("Общая выручка: ошибка")
+            self.label_count.setText("Оказано разных услуг: ошибка")
+            self.label_sum.setText("Общая сумма: ошибка")
