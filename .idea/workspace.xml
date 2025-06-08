@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="report_mechanicks.py - отчёт о занятости механиков за последний месяц">
+    <list default="true" id="62b0cb90-eed2-41b8-a0f2-93786686c134" name="Changes" comment="report_services.py - Фильтрация услуг по дате&#10;report_mechanicks.py - Поиск по имени механика">
+      <change afterPath="$PROJECT_DIR$/Backup bd/backup.backup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/10) Task10, Сложные запросы.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/3) Task, Простые запросы.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/4) Задание 4, Индексы.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/5) Задание 5, Представление.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/6) triggers.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/7) function.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/car_serice_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tasks/сar_service_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog/add_order_dialog.py" beforeDir="false" afterPath="$PROJECT_DIR$/dialog/add_order_dialog.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -31,44 +45,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_car_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_client_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_order_dialog (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.add_order_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database_manageer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.edit_number_for_client_dialog.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainwindow.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainwindow_administrator (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.mainwindow_client.executor&quot;: &quot;Run&quot;,
-    &quot;Python.merge_clients_and_cars.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_cars.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_clients.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_mechanicks.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_parts.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_parts_in_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_payment_types.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.tab_services.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_servises_in_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.tab_workplaces.executor&quot;: &quot;Run&quot;,
-    &quot;Python.welcome_window.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/PycharmProject/SQL_car_service/dialog&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.1.executor": "Run",
+    "Python.add_car_dialog.executor": "Run",
+    "Python.add_client_dialog.executor": "Run",
+    "Python.add_order_dialog (1).executor": "Run",
+    "Python.add_order_dialog.executor": "Run",
+    "Python.database_manageer.executor": "Run",
+    "Python.edit_number_for_client_dialog.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.mainwindow.executor": "Run",
+    "Python.mainwindow_administrator (1).executor": "Run",
+    "Python.mainwindow_client.executor": "Run",
+    "Python.merge_clients_and_cars.executor": "Run",
+    "Python.tab_cars.executor": "Run",
+    "Python.tab_clients.executor": "Run",
+    "Python.tab_mechanicks.executor": "Run",
+    "Python.tab_orders.executor": "Run",
+    "Python.tab_parts.executor": "Run",
+    "Python.tab_parts_in_orders.executor": "Run",
+    "Python.tab_payment_types.executor": "Debug",
+    "Python.tab_services.executor": "Run",
+    "Python.tab_servises_in_orders.executor": "Run",
+    "Python.tab_workplaces.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.welcome_window.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/PycharmProject/SQL_car_service"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\PycharmProject\SQL_car_service\dialog" />
       <recent name="C:\PycharmProject\SQL_car_service" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mainwindow_administrator (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_car_service" />
       <option name="ENV_FILES" value="" />
@@ -83,28 +98,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="edit_number_for_client_dialog" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SQL_car_service" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dialog" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dialog/edit_number_for_client_dialog.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,13 +194,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SQL_car_service" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Downloads/Telegram Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Downloads/Telegram Desktop/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.mainwindow_administrator (1)" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.tab_orders" />
         <item itemvalue="Python.1" />
         <item itemvalue="Python.mainwindow_client" />
-        <item itemvalue="Python.edit_number_for_client_dialog" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746709935204</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="report_services.py - Фильтрация услуг по дате&#10;report_mechanicks.py - Поиск по имени механика">
+      <option name="closed" value="true" />
+      <created>1747137847395</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747137847395</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -330,6 +353,7 @@
     <MESSAGE value="tab_orders.py - поиск по имени клиента&#10;tab_parts.py - Поиск по названию детали&#10;mainwindow_administrator.py - дополнительные отчёты(Количество проданных запчастей, их сумма, таблица)" />
     <MESSAGE value="report_services.py - отчёт об оказанных услугах за последний месяц" />
     <MESSAGE value="report_mechanicks.py - отчёт о занятости механиков за последний месяц" />
-    <option name="LAST_COMMIT_MESSAGE" value="report_mechanicks.py - отчёт о занятости механиков за последний месяц" />
+    <MESSAGE value="report_services.py - Фильтрация услуг по дате&#10;report_mechanicks.py - Поиск по имени механика" />
+    <option name="LAST_COMMIT_MESSAGE" value="report_services.py - Фильтрация услуг по дате&#10;report_mechanicks.py - Поиск по имени механика" />
   </component>
 </project>

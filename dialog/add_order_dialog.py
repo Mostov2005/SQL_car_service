@@ -18,7 +18,7 @@ class AddOrderDialog(QDialog):
         self.db = db_manager
         self.resize(1200, 800)
         if phone_client:
-            self.number_client_edit.setText("+7 (913) 136-41-83")
+            self.number_client_edit.setText(phone_client)
             self.number_client_edit.setReadOnly(True)
 
         self.id_client: int | None = None
